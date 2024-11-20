@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedidos</title>
+</head>
+<body>
+    <h1>Pedidos</h1>
+    <ul>
+        {% for pedido in pedidos %}
+        <li>Pedido #{{ pedido.id }} - Cliente ID: {{ pedido.cliente_id }}, Produto ID: {{ pedido.produto_id }}, Quantidade: {{ pedido.quantidade }}, Total: R$ {{ pedido.total }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
